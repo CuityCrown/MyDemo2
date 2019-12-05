@@ -35,7 +35,7 @@ public class WebSocketController {
      */
     @RequestMapping("/")
     public String index() {
-        return "test";
+        return "/test";
     }
 
     /**
