@@ -8,6 +8,8 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * description:
  *
@@ -28,6 +30,13 @@ public class MyRedisDemoTest {
     @Test
     public void test() {
         System.out.println(stringRedisTemplate.keys("card*"));
+    }
+
+
+    @Test
+    public void testExpire(){
+        Boolean expire = stringRedisTemplate.expire("", 2000, TimeUnit.MINUTES);
+        System.out.println(expire);
     }
 
 
