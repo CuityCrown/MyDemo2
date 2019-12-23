@@ -1,7 +1,10 @@
 server:
-  port: 8081
+  port: 8085
+  servlet:
+    context-path: /ceshi
 spring:
   thymeleaf:
     suffix: .html
     prefix: classpath:/static
     mode: HTML
+
