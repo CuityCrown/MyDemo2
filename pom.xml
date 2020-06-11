@@ -12,6 +12,7 @@
         <module>WebSocketDemo</module>
         <module>redis</module>
         <module>kafka</module>
+        <module>Agent</module>
     </modules>
 
     <parent>
