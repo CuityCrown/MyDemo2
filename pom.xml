@@ -13,6 +13,7 @@
         <module>redis</module>
         <module>kafka</module>
         <module>Agent</module>
+        <module>ThreadLocal</module>
     </modules>
 
     <parent>
